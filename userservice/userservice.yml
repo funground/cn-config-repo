@@ -5,7 +5,7 @@ spring.datasource.platform: "mysql"
 spring.database.driverClassName: "com.mysql.cj.jdbc.Driver"
 spring.datasource.url: "jdbc:mysql://castnap.crmqajhwpqgy.us-east-2.rds.amazonaws.com:3306/castnap?useUnicode=true&characterEncoding=utf8&amp"
 spring.datasource.username: "funground"
-spring.datasource.password: "funground1!"
+spring.datasource.password: "{cipher}841c664a70b74e5ce47d5afdad34ba3db0863de2288db208260b32b2e8c6879d"
 spring.datasource.testWhileIdle: "true"
 spring.datasource.validationQuery: "SELECT 1"
 
