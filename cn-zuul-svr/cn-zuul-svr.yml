@@ -1,0 +1,32 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8201
+
+  #Setting logging levels
+logging:
+    level:
+      com.netflix: WARN
+      org.springframework.web: WARN
+      com.thoughtmechanix: DEBUG
+
+histrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+ribbon:
+  ReadTimeout: 10000
+  
+
+zuul:
+  threadPool:
+    useSeparateThreadPools: true
+    threadPoolKeyPrefix: cn-zuulgw
+
